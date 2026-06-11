@@ -340,6 +340,498 @@ class BaseModel:
 | P15 — Multi-Agent System | ppo, sac, mcts, bayesian_network, transformer |
 
 ---
+# ML From Scratch — Complete Learning Resources
+
+Every book, paper, course, and reference needed to implement all 47 algorithms.
+Organized by module. Free resources marked with (FREE).
+
+---
+
+## Foundational Books — Read These First
+
+These four books cover everything. Read them in this order alongside implementation.
+
+| Book | Author | What It Covers | When To Read |
+|------|--------|---------------|--------------|
+| Mathematics for Machine Learning | Deisenroth, Faisal, Ong | Linear algebra, calculus, probability, optimization, PCA, GMM | Before Phase 1 |
+| Machine Learning: An Algorithmic Perspective | Marsland | Every classical algorithm derived from scratch with Python code | Phase 1–3 |
+| Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow | Géron | Practical implementation, full ML pipeline, deep learning intro | Phase 1–5 |
+| Deep Learning | Goodfellow, Bengio, Courville | Full theory of deep learning, backprop, CNNs, RNNs, optimization | Phase 4–8 |
+
+All four are available free:
+- MML: https://mml-book.github.io (FREE)
+- Deep Learning: https://www.deeplearningbook.org (FREE)
+
+---
+
+## Core — Autograd and Tensor
+
+### Primary Resources
+
+| Resource | Type | Link |
+|----------|------|------|
+| Micrograd by Andrej Karpathy | Video + Code | https://github.com/karpathy/micrograd |
+| The spelled-out intro to neural networks and backpropagation | YouTube | https://youtu.be/VMj-3S1tku0 |
+| Automatic Differentiation in Machine Learning: a Survey | Paper | https://arxiv.org/abs/1502.05767 |
+| Backpropagation Applied to Handwritten Zip Code Recognition | Paper (LeCun 1989) | http://yann.lecun.com/exdb/publis/pdf/lecun-89e.pdf |
+| Calculus on Computational Graphs: Backpropagation | Blog | https://colah.github.io/posts/2015-08-Backprop |
+
+### For Optimizers
+
+| Resource | Type | Link |
+|----------|------|------|
+| Adam: A Method for Stochastic Optimization | Paper | https://arxiv.org/abs/1412.6980 |
+| An Overview of Gradient Descent Optimization Algorithms | Blog | https://www.ruder.io/optimizing-gradient-descent |
+| Why Momentum Really Works | Blog | https://distill.pub/2017/momentum |
+
+---
+
+## Classical ML
+
+### Linear and Logistic Regression
+
+| Resource | Type | Link |
+|----------|------|------|
+| The Elements of Statistical Learning | Book (FREE) | https://hastie.su.domains/ElemStatLearn |
+| An Introduction to Statistical Learning | Book (FREE) | https://www.statlearning.com |
+| CS229 Lecture Notes — Linear Regression | Notes (FREE) | https://cs229.stanford.edu/notes2022fall/main_notes.pdf |
+| CS229 Lecture Notes — Logistic Regression | Notes (FREE) | Same as above |
+| Regression Shrinkage and Selection via the Lasso | Paper (Tibshirani 1996) | https://www.jstor.org/stable/2346178 |
+| Ridge Regression: Biased Estimation for Nonorthogonal Problems | Paper (Hoerl & Kennard) | Classic — available via Google Scholar |
+
+### Decision Trees and Ensembles
+
+| Resource | Type | Link |
+|----------|------|------|
+| Classification and Regression Trees | Book | Breiman, Friedman, Olshen, Stone 1984 — CART original |
+| Random Forests | Paper (Breiman 2001) | https://link.springer.com/article/10.1023/A:1010933404324 |
+| Greedy Function Approximation: A Gradient Boosting Machine | Paper (Friedman 2001) | https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-5/Greedy-function-approximation-a-gradient-boosting-machine/10.1214/aos/1013203451.full |
+| XGBoost: A Scalable Tree Boosting System | Paper (Chen & Guestrin 2016) | https://arxiv.org/abs/1603.02754 |
+| A Decision-Theoretic Generalization of On-Line Learning | Paper (AdaBoost — Freund & Schapire) | https://www.sciencedirect.com/science/article/pii/S002200009791504X |
+| StatQuest: Decision Trees | YouTube (FREE) | https://youtu.be/_L39rN6gz7Y |
+| StatQuest: Random Forests | YouTube (FREE) | https://youtu.be/J4Wdy0Wc_xQ |
+| StatQuest: Gradient Boosting | YouTube (FREE) | https://youtu.be/3CC4N4z3GJc |
+
+### SVM
+
+| Resource | Type | Link |
+|----------|------|------|
+| A Training Algorithm for Optimal Margin Classifiers | Paper (Boser, Guyon, Vapnik 1992) | Original SVM paper — search via Google Scholar |
+| A Tutorial on Support Vector Machines | Paper (Burges 1998) | https://link.springer.com/article/10.1023/A:1022627411411 |
+| Sequential Minimal Optimization | Paper (Platt 1998) | https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-98-14.pdf |
+| CS229 SVM Notes | Notes (FREE) | https://cs229.stanford.edu/notes2022fall/main_notes.pdf |
+
+### KNN and Naive Bayes
+
+| Resource | Type | Link |
+|----------|------|------|
+| Nearest Neighbor Pattern Classification | Paper (Cover & Hart 1967) | IEEE Transactions — search via Google Scholar |
+| A Probabilistic Theory of Pattern Recognition | Book | Devroye, Gyorfi, Lugosi |
+| CS229 Generative Learning Algorithms | Notes (FREE) | https://cs229.stanford.edu/notes2022fall/main_notes.pdf |
+
+---
+
+## Unsupervised Learning
+
+### Clustering
+
+| Resource | Type | Link |
+|----------|------|------|
+| Algorithm AS 136: A K-Means Clustering Algorithm | Paper (Hartigan & Wong 1979) | Original K-Means paper |
+| A Density-Based Algorithm for Discovering Clusters (DBSCAN) | Paper (Ester et al. 1996) | https://www.aaai.org/Papers/KDD/1996/KDD96-037.pdf |
+| Maximum Likelihood from Incomplete Data via the EM Algorithm | Paper (Dempster, Laird, Rubin 1977) | https://www.jstor.org/stable/2984875 — foundational EM paper |
+| Pattern Recognition and Machine Learning | Book | Bishop 2006 — Chapter 9 covers GMM and EM exhaustively |
+| StatQuest: K-Means Clustering | YouTube (FREE) | https://youtu.be/4b5d3muPQmA |
+| StatQuest: GMM and EM | YouTube (FREE) | https://youtu.be/REypj2sy_5U |
+
+### Dimensionality Reduction
+
+| Resource | Type | Link |
+|----------|------|------|
+| On Lines and Planes of Closest Fit to Systems of Points | Paper (Pearson 1901) | Original PCA paper |
+| A Tutorial on Principal Component Analysis | Paper (Shlens) | https://arxiv.org/abs/1404.1100 |
+| Visualizing Data using t-SNE | Paper (van der Maaten & Hinton 2008) | https://jmlr.org/papers/v9/vandermaaten08a.html |
+| UMAP: Uniform Manifold Approximation and Projection | Paper (McInnes et al. 2018) | https://arxiv.org/abs/1802.03426 |
+| StatQuest: PCA Step by Step | YouTube (FREE) | https://youtu.be/FgakZw6K1QQ |
+
+### Anomaly Detection
+
+| Resource | Type | Link |
+|----------|------|------|
+| Isolation Forest | Paper (Liu, Ting, Zhou 2008) | https://ieeexplore.ieee.org/document/4781136 |
+| Anomaly Detection: A Survey | Paper (Chandola et al. 2009) | https://dl.acm.org/doi/10.1145/1541880.1541882 |
+
+---
+
+## Probabilistic Models
+
+### Hidden Markov Models
+
+| Resource | Type | Link |
+|----------|------|------|
+| A Tutorial on Hidden Markov Models | Paper (Rabiner 1989) | https://ieeexplore.ieee.org/document/18626 — the definitive HMM tutorial |
+| Speech and Language Processing | Book (FREE) | Jurafsky & Martin — Chapter 8 covers HMM for NLP https://web.stanford.edu/~jurafsky/slp3 |
+| Pattern Recognition and Machine Learning | Book | Bishop — Chapter 13 covers HMM |
+
+### Kalman Filter
+
+| Resource | Type | Link |
+|----------|------|------|
+| A New Approach to Linear Filtering and Prediction Problems | Paper (Kalman 1960) | https://asmedigitalcollection.asme.org/fluidsengineering/article/82/1/35/397706 |
+| How a Kalman Filter Works in Pictures | Blog (FREE) | https://www.bzarg.com/p/how-a-kalman-filter-works-in-pictures |
+| Kalman and Bayesian Filters in Python | Book (FREE) | https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python |
+| Understanding the Basis of the Kalman Filter | Paper | https://ieeexplore.ieee.org/document/6279585 |
+
+### Gaussian Processes
+
+| Resource | Type | Link |
+|----------|------|------|
+| Gaussian Processes for Machine Learning | Book (FREE) | Rasmussen & Williams — http://www.gaussianprocess.org/gpml |
+| A Visual Exploration of Gaussian Processes | Blog (FREE) | https://distill.pub/2019/visual-exploration-gaussian-processes |
+| CS229 Gaussian Processes | Notes (FREE) | https://cs229.stanford.edu/notes2022fall/main_notes.pdf |
+
+### Bayesian Networks
+
+| Resource | Type | Link |
+|----------|------|------|
+| Probabilistic Graphical Models | Book | Koller & Friedman 2009 — the definitive PGM textbook |
+| Probabilistic Graphical Models (Coursera) | Course (FREE audit) | https://www.coursera.org/specializations/probabilistic-graphical-models |
+| Bayesian Reasoning and Machine Learning | Book (FREE) | Barber — http://www.cs.ucl.ac.uk/staff/d.barber/brml |
+
+### CRF
+
+| Resource | Type | Link |
+|----------|------|------|
+| Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data | Paper (Lafferty et al. 2001) | Original CRF paper — search via Google Scholar |
+| An Introduction to Conditional Random Fields | Paper (Sutton & McCallum) | https://arxiv.org/abs/1011.4088 |
+
+### Time Series — ARIMA and GARCH
+
+| Resource | Type | Link |
+|----------|------|------|
+| Time Series Analysis: Forecasting and Control | Book | Box, Jenkins, Reinsel, Ljung — the ARIMA bible |
+| Autoregressive Conditional Heteroscedasticity | Paper (Engle 1982) | Original ARCH paper — Journal of Econometrica |
+| Generalized Autoregressive Conditional Heteroscedasticity | Paper (Bollerslev 1986) | Original GARCH paper |
+| Forecasting: Principles and Practice | Book (FREE) | Hyndman & Athanasopoulos — https://otexts.com/fpp3 |
+| StatQuest: ARIMA | YouTube (FREE) | https://youtu.be/Aw77aMLj9uM |
+
+### Monte Carlo
+
+| Resource | Type | Link |
+|----------|------|------|
+| Monte Carlo Statistical Methods | Book | Robert & Casella |
+| An Introduction to MCMC for Machine Learning | Paper | https://link.springer.com/article/10.1023/A:1020281327116 |
+| CS228 Probabilistic Graphical Models Notes | Notes (FREE) | https://ermongroup.github.io/cs228-notes |
+
+---
+
+## Deep Learning
+
+### Backpropagation and MLP
+
+| Resource | Type | Link |
+|----------|------|------|
+| Deep Learning (Goodfellow et al.) | Book (FREE) | https://www.deeplearningbook.org — Chapters 6-8 |
+| Learning Representations by Backpropagating Errors | Paper (Rumelhart, Hinton, Williams 1986) | The backprop paper |
+| Neural Networks and Deep Learning | Book (FREE) | Michael Nielsen — http://neuralnetworksanddeeplearning.com |
+| Andrej Karpathy — Neural Networks: Zero to Hero | YouTube (FREE) | https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ |
+
+### CNN
+
+| Resource | Type | Link |
+|----------|------|------|
+| Gradient-Based Learning Applied to Document Recognition | Paper (LeCun et al. 1998) | http://yann.lecun.com/exdb/publis/pdf/lecun-98.pdf |
+| ImageNet Classification with Deep CNNs (AlexNet) | Paper (Krizhevsky et al. 2012) | https://papers.nips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html |
+| Very Deep Convolutional Networks (VGGNet) | Paper (Simonyan & Zisserman 2014) | https://arxiv.org/abs/1409.1556 |
+| Deep Residual Learning for Image Recognition (ResNet) | Paper (He et al. 2015) | https://arxiv.org/abs/1512.03385 |
+| CS231n: Convolutional Neural Networks for Visual Recognition | Course (FREE) | https://cs231n.github.io |
+| Why does im2col work? | Blog (FREE) | Search "im2col convolution explanation" — Pete Warden's blog |
+
+### RNN, LSTM, GRU
+
+| Resource | Type | Link |
+|----------|------|------|
+| Learning Long-Term Dependencies with Gradient Descent is Difficult | Paper (Bengio et al. 1994) | The vanishing gradient paper |
+| Long Short-Term Memory | Paper (Hochreiter & Schmidhuber 1997) | Original LSTM paper |
+| Empirical Evaluation of Gated Recurrent Neural Networks | Paper (Chung et al. 2014) | https://arxiv.org/abs/1412.3555 — GRU paper |
+| Understanding LSTM Networks | Blog (FREE) | https://colah.github.io/posts/2015-08-Understanding-LSTMs |
+| The Unreasonable Effectiveness of Recurrent Neural Networks | Blog (FREE) | https://karpathy.github.io/2015/05/21/rnn-effectiveness |
+
+### Normalization and Regularization
+
+| Resource | Type | Link |
+|----------|------|------|
+| Batch Normalization | Paper (Ioffe & Szegedy 2015) | https://arxiv.org/abs/1502.03167 |
+| Layer Normalization | Paper (Ba et al. 2016) | https://arxiv.org/abs/1607.06450 |
+| Dropout: A Simple Way to Prevent Neural Networks from Overfitting | Paper (Srivastava et al. 2014) | https://jmlr.org/papers/v15/srivastava14a.html |
+
+### Autoencoder, VAE, GAN
+
+| Resource | Type | Link |
+|----------|------|------|
+| Auto-Encoding Variational Bayes | Paper (Kingma & Welling 2013) | https://arxiv.org/abs/1312.6114 — VAE original |
+| Generative Adversarial Networks | Paper (Goodfellow et al. 2014) | https://arxiv.org/abs/1406.2661 — GAN original |
+| Tutorial on Variational Autoencoders | Paper (Doersch 2016) | https://arxiv.org/abs/1606.05908 |
+| From Autoencoder to Beta-VAE | Blog (FREE) | https://lilianweng.github.io/posts/2018-08-12-vae |
+| GAN — A Beginner's Guide | Blog (FREE) | https://lilianweng.github.io/posts/2017-08-20-gan |
+
+### Diffusion Models
+
+| Resource | Type | Link |
+|----------|------|------|
+| Denoising Diffusion Probabilistic Models | Paper (Ho et al. 2020) | https://arxiv.org/abs/2006.11239 — DDPM original |
+| Improved Denoising Diffusion Probabilistic Models | Paper (Nichol & Dhariwal 2021) | https://arxiv.org/abs/2102.09672 |
+| What are Diffusion Models? | Blog (FREE) | https://lilianweng.github.io/posts/2021-07-11-diffusion-models |
+| Diffusion Models from Scratch | YouTube (FREE) | https://youtu.be/a4Yfz2FxXiY |
+
+---
+
+## NLP
+
+### Word Embeddings
+
+| Resource | Type | Link |
+|----------|------|------|
+| Efficient Estimation of Word Representations in Vector Space (Word2Vec) | Paper (Mikolov et al. 2013) | https://arxiv.org/abs/1301.3781 |
+| GloVe: Global Vectors for Word Representation | Paper (Pennington et al. 2014) | https://aclanthology.org/D14-1162 |
+| The Illustrated Word2Vec | Blog (FREE) | https://jalammar.github.io/illustrated-word2vec |
+
+### Transformer
+
+| Resource | Type | Link |
+|----------|------|------|
+| Attention Is All You Need | Paper (Vaswani et al. 2017) | https://arxiv.org/abs/1706.03762 — the transformer paper |
+| The Illustrated Transformer | Blog (FREE) | https://jalammar.github.io/illustrated-transformer |
+| The Annotated Transformer | Blog + Code (FREE) | https://nlp.seas.harvard.edu/annotated-transformer |
+| Let's build GPT from scratch | YouTube (FREE) | https://youtu.be/kCc8FmEb1nY — Karpathy |
+| CS224N: Natural Language Processing with Deep Learning | Course (FREE) | https://web.stanford.edu/class/cs224n |
+
+### BERT and GPT
+
+| Resource | Type | Link |
+|----------|------|------|
+| BERT: Pre-training of Deep Bidirectional Transformers | Paper (Devlin et al. 2018) | https://arxiv.org/abs/1810.04805 |
+| Language Models are Unsupervised Multitask Learners (GPT-2) | Paper (Radford et al. 2019) | https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf |
+| The Illustrated BERT | Blog (FREE) | https://jalammar.github.io/illustrated-bert |
+| The Illustrated GPT-2 | Blog (FREE) | https://jalammar.github.io/illustrated-gpt2 |
+| nanoGPT | Code (FREE) | https://github.com/karpathy/nanoGPT |
+
+---
+
+## Reinforcement Learning
+
+### Foundational
+
+| Resource | Type | Link |
+|----------|------|------|
+| Reinforcement Learning: An Introduction | Book (FREE) | Sutton & Barto — http://incompleteideas.net/book/the-book-2nd.html — the RL bible |
+| CS285: Deep Reinforcement Learning | Course (FREE) | https://rail.eecs.berkeley.edu/deeprlcourse |
+| David Silver RL Lectures | YouTube (FREE) | https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ |
+
+### Q-Learning and DQN
+
+| Resource | Type | Link |
+|----------|------|------|
+| Q-Learning | Paper (Watkins & Dayan 1992) | Original Q-learning paper — Machine Learning journal |
+| Human-level Control Through Deep Reinforcement Learning (DQN) | Paper (Mnih et al. 2015) | https://www.nature.com/articles/nature14236 |
+| Playing Atari with Deep Reinforcement Learning | Paper (Mnih et al. 2013) | https://arxiv.org/abs/1312.5602 |
+
+### Policy Gradient and PPO
+
+| Resource | Type | Link |
+|----------|------|------|
+| Policy Gradient Methods for Reinforcement Learning | Paper (Sutton et al. 1999) | Original policy gradient paper |
+| Proximal Policy Optimization Algorithms | Paper (Schulman et al. 2017) | https://arxiv.org/abs/1707.06347 — PPO original |
+| High-Dimensional Continuous Control Using Generalized Advantage Estimation | Paper (Schulman et al. 2015) | https://arxiv.org/abs/1506.02438 — GAE paper |
+| An Introduction to Deep Reinforcement Learning | Paper (FREE) | https://arxiv.org/abs/1811.12560 |
+
+### SAC
+
+| Resource | Type | Link |
+|----------|------|------|
+| Soft Actor-Critic: Off-Policy Maximum Entropy Deep RL | Paper (Haarnoja et al. 2018) | https://arxiv.org/abs/1801.01290 |
+| Soft Actor-Critic Algorithms and Applications | Paper (Haarnoja et al. 2019) | https://arxiv.org/abs/1812.05905 |
+
+### MCTS
+
+| Resource | Type | Link |
+|----------|------|------|
+| Mastering the Game of Go with Deep Neural Networks (AlphaGo) | Paper (Silver et al. 2016) | https://www.nature.com/articles/nature16961 |
+| Mastering Chess and Shogi by Self-Play (AlphaZero) | Paper (Silver et al. 2017) | https://arxiv.org/abs/1712.01815 |
+| A Survey of Monte Carlo Tree Search Methods | Paper | https://ieeexplore.ieee.org/document/6145622 |
+
+---
+
+## Self-Supervised Learning
+
+| Resource | Type | Link |
+|----------|------|------|
+| A Simple Framework for Contrastive Learning (SimCLR) | Paper (Chen et al. 2020) | https://arxiv.org/abs/2002.05709 |
+| Masked Autoencoders Are Scalable Vision Learners (MAE) | Paper (He et al. 2021) | https://arxiv.org/abs/2111.06377 |
+| Bootstrap Your Own Latent (BYOL) | Paper (Grill et al. 2020) | https://arxiv.org/abs/2006.07733 |
+| Self-Supervised Representation Learning | Blog (FREE) | https://lilianweng.github.io/posts/2019-11-10-self-supervised |
+| The Illustrated Self-Supervised Learning | Blog (FREE) | https://amitness.com/2020/02/illustrated-self-supervised-learning |
+
+---
+
+## Reference Blogs — Bookmark These
+
+These blogs publish deep technical content consistently. Treat them as living textbooks.
+
+| Blog | Author | Best For |
+|------|--------|----------|
+| https://lilianweng.github.io | Lilian Weng (OpenAI) | RL, GANs, VAEs, Diffusion, Attention — comprehensive deep dives |
+| https://colah.github.io | Chris Olah | LSTMs, Attention, Neural Net visualization — best intuition writing |
+| https://jalammar.github.io | Jay Alammar | Transformers, BERT, GPT — illustrated explanations |
+| https://karpathy.github.io | Andrej Karpathy | RNNs, Training tricks, practical deep learning |
+| https://distill.pub | Distill | Research-grade interactive explanations — momentum, attention, features |
+| https://ruder.io | Sebastian Ruder | NLP, optimization, transfer learning |
+| https://www.offconvex.org | Off the Convex Path | Optimization theory, deep learning theory |
+| https://ermongroup.github.io/cs228-notes | Stanford PGM | Probabilistic graphical models complete notes |
+
+---
+
+## YouTube Channels — For Visual Learners
+
+| Channel | Best For |
+|---------|----------|
+| Andrej Karpathy | Building everything from scratch — the best channel for this project |
+| StatQuest with Josh Starmer | Classical ML with clear visual intuitions |
+| 3Blue1Brown | Linear algebra, calculus, neural networks — mathematical intuition |
+| Yannic Kilcher | Paper walkthroughs — transformers, RL, diffusion |
+| Two Minute Papers | Paper summaries — staying current |
+| Lex Fridman | Long-form interviews — context and perspective |
+| Deepmind | RL, AlphaFold, research papers explained |
+
+---
+
+## Courses — Structured Learning Paths
+
+| Course | Platform | Cost | Best For |
+|--------|----------|------|----------|
+| CS229 Machine Learning (Andrew Ng) | Stanford / YouTube | FREE | Classical ML theory — lectures + notes |
+| CS231n CNNs for Visual Recognition | Stanford / YouTube | FREE | CNN theory and implementation |
+| CS224N NLP with Deep Learning | Stanford / YouTube | FREE | Transformers, BERT, GPT in depth |
+| CS285 Deep Reinforcement Learning | Berkeley / YouTube | FREE | PPO, SAC, MCTS, model-based RL |
+| Fast.ai Practical Deep Learning | fast.ai | FREE | Top-down practical implementation |
+| Deep Learning Specialization | Coursera (Ng) | Paid / audit free | Structured path through deep learning |
+| Full Stack Deep Learning | https://fullstackdeeplearning.com | FREE | MLOps, deployment, production ML |
+
+---
+
+## Mathematics Prerequisites
+
+If any mathematical concept blocks you while implementing, these are the targeted resources.
+
+### Linear Algebra
+
+| Resource | Type | Link |
+|----------|------|------|
+| Linear Algebra — Gilbert Strang | Book + YouTube (FREE) | https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010 |
+| Essence of Linear Algebra — 3Blue1Brown | YouTube (FREE) | https://youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab |
+| MML Book Chapter 2 | Book (FREE) | https://mml-book.github.io |
+
+### Calculus and Optimization
+
+| Resource | Type | Link |
+|----------|------|------|
+| Essence of Calculus — 3Blue1Brown | YouTube (FREE) | https://youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr |
+| Convex Optimization — Boyd & Vandenberghe | Book (FREE) | https://web.stanford.edu/~boyd/cvxbook |
+| MML Book Chapter 5 | Book (FREE) | https://mml-book.github.io |
+
+### Probability and Statistics
+
+| Resource | Type | Link |
+|----------|------|------|
+| Probability Theory: The Logic of Science | Book | Jaynes — the Bayesian probability bible |
+| Think Stats | Book (FREE) | https://greenteapress.com/thinkstats2 |
+| CS229 Probability Review | Notes (FREE) | https://cs229.stanford.edu/section/cs229-prob.pdf |
+| MML Book Chapters 6-9 | Book (FREE) | https://mml-book.github.io |
+
+---
+
+## Paper Reading Order
+
+Read papers in this order — each one builds on the previous.
+
+```
+Week 1-6 (Classical):
+  Tibshirani 1996 — Lasso
+  Breiman 2001 — Random Forests
+  Friedman 2001 — Gradient Boosting
+  Freund & Schapire — AdaBoost
+  Platt 1998 — SMO for SVM
+
+Week 7-9 (Unsupervised):
+  Pearson 1901 — PCA
+  Ester et al. 1996 — DBSCAN
+  Dempster et al. 1977 — EM Algorithm
+  Liu et al. 2008 — Isolation Forest
+  van der Maaten & Hinton 2008 — t-SNE
+  McInnes et al. 2018 — UMAP
+
+Week 10-14 (Probabilistic):
+  Kalman 1960 — Kalman Filter
+  Rabiner 1989 — HMM Tutorial
+  Lafferty et al. 2001 — CRF
+  Engle 1982 — ARCH
+  Bollerslev 1986 — GARCH
+
+Week 15-20 (Deep Layers):
+  Rumelhart et al. 1986 — Backpropagation
+  Hochreiter & Schmidhuber 1997 — LSTM
+  Ioffe & Szegedy 2015 — Batch Normalization
+  Srivastava et al. 2014 — Dropout
+  LeCun et al. 1998 — CNN
+
+Week 21-26 (Deep Models):
+  Kingma & Welling 2013 — VAE
+  Goodfellow et al. 2014 — GAN
+  He et al. 2020 — DDPM Diffusion
+
+Week 27-32 (NLP):
+  Mikolov et al. 2013 — Word2Vec
+  Vaswani et al. 2017 — Attention Is All You Need
+  Devlin et al. 2018 — BERT
+  Radford et al. 2019 — GPT-2
+
+Week 33-38 (RL):
+  Watkins & Dayan 1992 — Q-Learning
+  Mnih et al. 2015 — DQN
+  Schulman et al. 2015 — GAE
+  Schulman et al. 2017 — PPO
+  Haarnoja et al. 2018 — SAC
+  Silver et al. 2017 — AlphaZero
+
+Week 39-42 (Self-Supervised):
+  Chen et al. 2020 — SimCLR
+  He et al. 2021 — MAE
+```
+
+---
+
+## How To Read a Paper
+
+Most people read papers wrong. Use this method:
+
+**Pass 1 (10 minutes):** Read title, abstract, introduction, conclusion, and look at all figures. Decide if the paper is worth reading fully.
+
+**Pass 2 (1 hour):** Read everything except the math. Understand what problem they're solving, what their key idea is, and what results they show. Ignore proofs.
+
+**Pass 3 (2-4 hours):** Implement the algorithm described. Only now read the math carefully. Every equation should become a line of code.
+
+A paper you've implemented is worth ten papers you've only read.
+
+---
+
+## Notes
+
+- Prioritize papers over secondary explanations wherever possible. Blogs and videos build intuition but the paper is the ground truth.
+- For every algorithm, the implementation should come before or alongside the paper reading — not after.
+- Lilian Weng's blog covers almost every algorithm in this library. When stuck on theory, check her post on that topic first.
+- Karpathy's YouTube series is the single best resource for building the autograd engine and transformer from scratch. Watch all of it before Phase 4.
+
+---
 
 ## Verification Strategy
 
